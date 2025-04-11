@@ -1,0 +1,43 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow">
+        <div class="card-header bg-success text-white text-center">
+          <h4>Register</h4>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+            <div class="form-group mb-3">
+              <label for="username">Username</label>
+              <input
+                id="username"
+                formControlName="username"
+                type="text"
+                class="form-control"
+                placeholder="Choose a username" />
+            </div>
+            <div class="form-group mb-3">
+              <label for="password">Password</label>
+              <input
+                id="password"
+                formControlName="password"
+                type="password"
+                class="form-control"
+                placeholder="Create a password" />
+            </div>
+            <div class="d-grid gap-2">
+              <button
+                type="submit"
+                class="btn btn-success"
+                [disabled]="!registerForm.valid">Register</button>
+<!--              <button-->
+<!--                type="button"-->
+<!--                class="btn btn-outline-secondary"-->
+<!--                routerLink="/login">Back to Login</button>-->
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
