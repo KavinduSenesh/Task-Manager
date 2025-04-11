@@ -59,7 +59,7 @@ export class TaskFormComponent implements OnInit {
     if (this.isEdit){
       this.taskService.updateTask(this.id, taskData).subscribe(
         (response) => {
-          this.router.navigate(['/']);
+          this.router.navigate(['/task-list']);
         },
         (error) => {
           console.error('Error updating task:', error);
@@ -68,7 +68,7 @@ export class TaskFormComponent implements OnInit {
     }else {
       this.taskService.createTask(taskData).subscribe(
         (response) => {
-          this.router.navigate(['/']);
+          this.router.navigate(['/task-list']);
         },
         (error) => {
           console.error('Error creating task:', error);
