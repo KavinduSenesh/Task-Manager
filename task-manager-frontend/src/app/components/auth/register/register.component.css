@@ -1,0 +1,149 @@
+/* Registration Page Styling */
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  background-color: #209150 !important; /* Green color for register page */
+  padding: 1.5rem 1rem;
+  border-bottom: none;
+}
+
+.card-header h4 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #34495e;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.form-control {
+  height: calc(3rem + 2px);
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  padding: 0.75rem 1.25rem;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: #2ecc71; /* Green focus border */
+  box-shadow: 0 0 0 0.2rem rgba(46, 204, 113, 0.25);
+}
+
+.form-control::placeholder {
+  color: #95a5a6;
+  opacity: 0.7;
+}
+
+.btn {
+  padding: 0.75rem 1.25rem;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn-success {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+
+.btn-success:hover, .btn-success:focus {
+  background-color: #27ae60;
+  border-color: #27ae60;
+  box-shadow: 0 4px 10px rgba(46, 204, 113, 0.4);
+}
+
+.btn-success:disabled {
+  background-color: #82e0a8;
+  border-color: #82e0a8;
+}
+
+.btn-outline-secondary {
+  color: #7f8c8d;
+  border-color: #95a5a6;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #95a5a6;
+  border-color: #95a5a6;
+  color: white;
+  box-shadow: 0 4px 10px rgba(149, 165, 166, 0.4);
+}
+
+.d-grid .btn {
+  margin-bottom: 0.75rem;
+}
+
+.d-grid .btn:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+}
+
+/* Animation for form appearance */
+.card {
+  animation: fadeInUp 0.6s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Shadow enhancement */
+.shadow {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Additional style for registration page's password field */
+input[type="password"] {
+  letter-spacing: 0.1em;
+}
+
+/* Uncomment if you want to add the back button again */
+/*
+.btn-outline-secondary {
+  margin-top: 0.5rem;
+}
+*/
