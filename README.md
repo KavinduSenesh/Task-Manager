@@ -65,7 +65,7 @@ Run the backend
 ```
 ./mvnw spring-boot:run
 ```
-🌐 Frontend Setup (Angular)
+🌐 Frontend Setup ( Angular )
 Navigate to the Angular frontend folder
 ```
 bash
