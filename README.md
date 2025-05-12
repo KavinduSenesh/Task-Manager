@@ -40,7 +40,7 @@ A simple yet secure **Task Manager** application built with **Spring Boot (Java)
 ![Form Screenshot](assets/form.png)
 
 ## 📋 Task list
-![List Screenshot](assets/list.png)
+![List Screenshot](assets/Screenshot 2025-05-12 202633.png)
 
 ## 📦 Installation
 
